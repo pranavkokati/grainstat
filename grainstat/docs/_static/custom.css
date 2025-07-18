@@ -1,0 +1,387 @@
+/* Custom CSS for GrainStat Documentation */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Root variables for consistent theming */
+:root {
+    --grainstat-primary: #2c5aa0;
+    --grainstat-secondary: #1e3a5f;
+    --grainstat-accent: #3498db;
+    --grainstat-success: #27ae60;
+    --grainstat-warning: #f39c12;
+    --grainstat-danger: #e74c3c;
+    --grainstat-light: #ecf0f1;
+    --grainstat-dark: #2c3e50;
+    --grainstat-code-bg: #f8f9fa;
+    --grainstat-border: #ddd;
+}
+
+/* Typography improvements */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headers with improved typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+h1 {
+    color: var(--grainstat-primary);
+    border-bottom: 3px solid var(--grainstat-accent);
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    color: var(--grainstat-secondary);
+    border-bottom: 2px solid var(--grainstat-light);
+    padding-bottom: 0.2em;
+}
+
+/* Code styling */
+code, .literal {
+    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    background-color: var(--grainstat-code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    border: 1px solid var(--grainstat-border);
+}
+
+/* Code blocks */
+.highlight {
+    border-radius: 6px;
+    margin: 1em 0;
+    overflow-x: auto;
+}
+
+.highlight pre {
+    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+    padding: 1em;
+    margin: 0;
+    background-color: #f8f9fa;
+    border: 1px solid var(--grainstat-border);
+    border-radius: 6px;
+}
+
+/* Sidebar styling */
+.wy-nav-side {
+    background: linear-gradient(180deg, var(--grainstat-primary) 0%, var(--grainstat-secondary) 100%);
+}
+
+.wy-side-nav-search {
+    background-color: var(--grainstat-secondary);
+}
+
+.wy-side-nav-search > a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* Menu items */
+.wy-menu-vertical a {
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.wy-menu-vertical li.current a {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+}
+
+.wy-menu-vertical li.current > a {
+    background-color: var(--grainstat-accent);
+}
+
+/* Tables */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+    padding: 0.5em;
+}
+
+.wy-table th {
+    background-color: var(--grainstat-light);
+    color: var(--grainstat-dark);
+    font-weight: 600;
+}
+
+.wy-table-striped tr:nth-child(2n-1) td {
+    background-color: #f9f9f9;
+}
+
+/* Admonitions (notes, warnings, etc.) */
+.admonition {
+    border-radius: 6px;
+    margin: 1em 0;
+    padding: 0;
+    border: 1px solid var(--grainstat-border);
+    overflow: hidden;
+}
+
+.admonition .admonition-title {
+    font-weight: 600;
+    margin: 0;
+    padding: 0.75em 1em;
+    border-bottom: 1px solid var(--grainstat-border);
+}
+
+.admonition p {
+    margin: 0.75em 1em;
+}
+
+.admonition.note .admonition-title {
+    background-color: var(--grainstat-accent);
+    color: white;
+}
+
+.admonition.warning .admonition-title {
+    background-color: var(--grainstat-warning);
+    color: white;
+}
+
+.admonition.tip .admonition-title {
+    background-color: var(--grainstat-success);
+    color: white;
+}
+
+/* Buttons and links */
+.btn {
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--grainstat-primary);
+    border-color: var(--grainstat-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--grainstat-secondary);
+    border-color: var(--grainstat-secondary);
+}
+
+/* Links */
+a {
+    color: var(--grainstat-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--grainstat-primary);
+    text-decoration: underline;
+}
+
+/* Breadcrumbs */
+.wy-breadcrumbs li a {
+    color: var(--grainstat-accent);
+}
+
+.wy-breadcrumbs li a:hover {
+    color: var(--grainstat-primary);
+}
+
+/* Search box */
+.wy-side-nav-search input[type=text] {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.wy-side-nav-search input[type=text]:focus {
+    border-color: var(--grainstat-accent);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+/* Mathematical equations */
+.math {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+/* Footnotes */
+.footnote {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Version selector */
+.rst-versions {
+    border-top: 3px solid var(--grainstat-accent);
+}
+
+.rst-versions .rst-current-version {
+    background-color: var(--grainstat-primary);
+    color: white;
+}
+
+/* Copy button for code blocks */
+.copybtn {
+    background-color: var(--grainstat-light);
+    border: 1px solid var(--grainstat-border);
+    color: var(--grainstat-dark);
+    border-radius: 3px;
+}
+
+.copybtn:hover {
+    background-color: var(--grainstat-accent);
+    color: white;
+}
+
+/* Grid system for cards */
+.grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    border: 1px solid var(--grainstat-border);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--grainstat-primary);
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .wy-nav-content {
+        padding: 1em;
+    }
+
+    .wy-table-responsive table {
+        font-size: 0.9em;
+    }
+
+    .highlight pre {
+        font-size: 0.8em;
+        padding: 0.75em;
+    }
+}
+
+/* Print styles */
+@media print {
+    .wy-nav-side,
+    .wy-nav-content-wrap .wy-nav-top,
+    .rst-footer-buttons,
+    .copybtn {
+        display: none !important;
+    }
+
+    .wy-nav-content {
+        margin-left: 0;
+    }
+
+    a {
+        color: var(--grainstat-dark) !important;
+        text-decoration: none !important;
+    }
+
+    .highlight {
+        border: 1px solid #ccc;
+    }
+}
+
+/* Custom classes for documentation */
+.highlight-important {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 0.75em;
+    margin: 1em 0;
+}
+
+.formula-box {
+    background-color: #f8f9fa;
+    border: 1px solid var(--grainstat-border);
+    border-left: 4px solid var(--grainstat-accent);
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--grainstat-light);
+}
+
+.feature-list li:before {
+    content: "✓";
+    color: var(--grainstat-success);
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+/* Improved spacing */
+.section {
+    margin-bottom: 2em;
+}
+
+.toctree-wrapper .toctree-l1 > a {
+    font-weight: 500;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid var(--grainstat-border);
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Custom logo styling if added */
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Enhanced focus states for accessibility */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid var(--grainstat-accent);
+    outline-offset: 2px;
+}
+
+/* Dark mode support (if implemented) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here if needed */
+}
