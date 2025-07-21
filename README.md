@@ -216,9 +216,6 @@ GrainStat is designed for materials scientists, metallurgists, and researchers w
 - **Research** on grain growth, recrystallization, and phase transformations
 - **Standards compliance** (ASTM E112, ISO 643)
 
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## License
 
@@ -231,7 +228,7 @@ If you use GrainStat in your research, please cite:
 ```bibtex
 @software{grainstat2024,
   title={GrainStat: Professional grain size analysis for materials science},
-  author={Materials Science Lab},
+  author={Pranav Kokati},
   year={2024},
   url={https://github.com/materialslab/grainstat}
 }
