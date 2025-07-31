@@ -230,7 +230,7 @@ If you use GrainStat in your research, please cite:
   title={GrainStat: Professional grain size analysis for materials science},
   author={Pranav Kokati},
   year={2024},
-  url={https://github.com/materialslab/grainstat}
+  url={https://github.com/pranavkokati/grainstat}
 }
 ```
 
