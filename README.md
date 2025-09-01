@@ -234,12 +234,4 @@ If you use GrainStat in your research, please cite:
 }
 ```
 
-## Support
 
-- 📚 [Documentation](https://grainstat.readthedocs.io/)
-- 🐛 [Issue Tracker](https://github.com/materialslab/grainstat/issues)
-- 💬 [Discussions](https://github.com/materialslab/grainstat/discussions)
-
----
-
-**Made with ❤️ for the materials science community**
