@@ -1,0 +1,8 @@
+include README.md
+include CHANGELOG.md
+include requirements.txt
+include LICENSE
+recursive-include grainstat *.py
+recursive-include grainstat/export/templates *.html *.md
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

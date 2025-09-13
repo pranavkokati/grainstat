@@ -83,7 +83,12 @@ all = [
 grainstat = "grainstat.cli:cli_main"
 
 [tool.setuptools]
-packages = ["grainstat"]
+packages = {find = {}}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["grainstat*"]
+exclude = ["tests*"]
 
 [tool.setuptools.package-data]
 grainstat = ["export/templates/*.html", "export/templates/*.md"]

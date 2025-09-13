@@ -52,16 +52,56 @@ GrainStat is a comprehensive Python package for analyzing grain microstructures 
 
 ## Installation
 
+### Quick Installation
 ```bash
-# Basic installation
-pip install grainstat
+# Clone the repository
+git clone https://github.com/pranavkokati/grainstat.git
+cd grainstat
 
-# With all optional dependencies
-pip install grainstat[all]
+# Install in editable mode (recommended for development)
+pip install -e .
 
-# For development
-pip install grainstat[dev]
+# Or install normally
+pip install .
 ```
+
+### Alternative Installation Methods
+
+#### Method 1: From PyPI (when available)
+```bash
+pip install grainstat
+```
+
+#### Method 2: With all optional dependencies
+```bash
+pip install -e .[all]
+```
+
+#### Method 3: In a virtual environment (recommended)
+```bash
+# Create and activate virtual environment
+python -m venv grainstat_env
+source grainstat_env/bin/activate  # On macOS/Linux
+# grainstat_env\Scripts\activate    # On Windows
+
+# Install grainstat
+pip install -e .
+```
+
+### Troubleshooting Installation Issues
+
+If you encounter `ModuleNotFoundError: No module named 'grainstat.core'`, try:
+
+```bash
+# Uninstall and reinstall
+pip uninstall grainstat
+pip install -e .
+
+# Verify installation
+python -c "import grainstat; from grainstat.core import ImageLoader; print('✓ Installation successful')"
+```
+
+For detailed troubleshooting, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
 ### Requirements
 - Python 3.8+

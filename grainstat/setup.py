@@ -34,7 +34,7 @@ setup(
     long_description=read_readme(),
     long_description_content_type='text/markdown',
     url='https://github.com/materialslab/grainstat',
-    packages=find_packages(),
+    packages=find_packages(where='.', include=['grainstat*']),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
