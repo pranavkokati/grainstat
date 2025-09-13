@@ -101,8 +101,6 @@ pip install -e .
 python -c "import grainstat; from grainstat.core import ImageLoader; print('✓ Installation successful')"
 ```
 
-For detailed troubleshooting, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
-
 ### Requirements
 - Python 3.8+
 - NumPy, SciPy, scikit-image
